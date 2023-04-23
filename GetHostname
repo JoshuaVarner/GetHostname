@@ -1,0 +1,5 @@
+Option Explicit
+Dim objNetwork, strComputerName
+Set objNetwork = CreateObject("WScript.Network")
+strComputerName = objNetwork.ComputerName
+MsgBox "The computer's name is: " & strComputerName, vbInformation, "Computer Host Name"
